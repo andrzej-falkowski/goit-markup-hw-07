@@ -47,9 +47,30 @@
             </li>
           </ul>
         </address>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            viewbox="0 0 32 22"
+            width="32"
+            height="22"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1.34766 20.0431H30.8861M1.34766 10.7354H30.8861M1.34766 1.42773H30.8861"
+              stroke="#2E2F42"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
       </div>
     </header>
     <main>
+      <!-- Portfolio -->
       <section class="main-section-portfolio">
         <div class="container">
           <h1 class="visually-hidden">Portfolio</h1>
@@ -77,6 +98,7 @@
                   <div class="card-box">
                     <img
                       src="./images/bankingapp.jpg"
+                      srcset="./images/bankingapp@2x.jpg 2x"
                       alt="Concept visualization of seven pages of Banking App layout"
                       width="360"
                       height="300"
@@ -102,6 +124,7 @@
                   <div class="card-box">
                     <img
                       src="./images/cashlesspayment.jpg"
+                      srcset="./images/cashlesspayment@2x.jpg 2x"
                       alt="Smartphone handed by a person and applied to a payment terminal"
                       width="360"
                       height="300"
@@ -125,6 +148,7 @@
                   <div class="card-box">
                     <img
                       src="./images/meditationapp.jpg"
+                      srcset="./images/meditationapp@2x.jpg 2x"
                       alt="Visualization of notebook and smartphone with some concept of meditation app on screen"
                       width="360"
                       height="300"
@@ -148,6 +172,7 @@
                   <div class="card-box">
                     <img
                       src="./images/taxiservice.jpg"
+                      srcset="./images/taxiservice@2x.jpg 2x"
                       alt="Car interior dashboard with some hands grabbing the steering wheel"
                       width="360"
                       height="300"
@@ -171,6 +196,7 @@
                   <div class="card-box">
                     <img
                       src="./images/screenillustrations.jpg"
+                      srcset="./images/screenillustrations@2x.jpg 2x"
                       alt="Visualization of smartphone with some random space art wallpapers"
                       width="360"
                       height="300"
@@ -194,6 +220,7 @@
                   <div class="card-box">
                     <img
                       src="./images/onlinecourses.jpg"
+                      srcset="./images/onlinecourses@2x.jpg 2x"
                       alt="Young smiling woman holding a smartphone and looking at it screen"
                       width="360"
                       height="300"
@@ -217,6 +244,7 @@
                   <div class="card-box">
                     <img
                       src="./images/instagramstories.jpg"
+                      srcset="./images/instagramstories@2x.jpg 2x"
                       alt="Visualizations of some Instagram app screen designs"
                       width="360"
                       height="300"
@@ -240,6 +268,7 @@
                   <div class="card-box">
                     <img
                       src="./images/organicfood.jpg"
+                      srcset="./images/organicfood@2x.jpg 2x"
                       alt="Walking woman carrying a bag with vegetables"
                       width="360"
                       height="300"
@@ -263,6 +292,7 @@
                   <div class="card-box">
                     <img
                       src="./images/freshcoffee.jpg"
+                      srcset="./images/freshcoffee@2x.jpg 2x"
                       alt="A person handling a cup and making a coffee"
                       width="360"
                       height="300"
@@ -286,6 +316,8 @@
         </div>
       </section>
     </main>
+
+    <!-- Footer -->
     <footer class="page-footer">
       <div class="container flex-footer">
         <div class="footer-left-side">
@@ -299,28 +331,28 @@
           <p class="footer-body-medium">Social media</p>
           <ul class="footer-icon-list">
             <li>
-              <button type="button" class="footer-icon">
+              <button type="button" class="social-media-icon">
                 <svg viewbox="0 0 24 24" width="24" height="24">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </button>
             </li>
             <li>
-              <button type="button" class="footer-icon">
+              <button type="button" class="social-media-icon">
                 <svg viewbox="0 0 24 24" width="24" height="24">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </button>
             </li>
             <li>
-              <button type="button" class="footer-icon">
+              <button type="button" class="social-media-icon">
                 <svg viewbox="0 0 24 24" width="24" height="24">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </button>
             </li>
             <li>
-              <button type="button" class="footer-icon">
+              <button type="button" class="social-media-icon">
                 <svg viewbox="0 0 24 24" width="24" height="24">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
@@ -352,5 +384,76 @@
         </div>
       </div>
     </footer>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="menu-container js-menu-container">
+      <button class="menu-toggle js-close-menu">
+        <svg viewbox="0 0 8 8" width="8" height="8">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu-nav header-h2">
+        <li>
+          <a class="" href="./index.html" target="_self">Studio</a>
+        </li>
+        <li>
+          <a class="" href="./portfolio.html" target="_self">Portfolio</a>
+        </li>
+        <li><a class="" href="#">Contacts</a></li>
+      </ul>
+      <address>
+        <ul class="mobile-menu-contacts">
+          <li>
+            <a class="mobile-menu-tel header-h2" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+          <li>
+            <a class="mobile-menu-mail" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+      </address>
+      <ul class="mobile-menu-icon-list">
+        <li>
+          <button type="button" class="social-media-icon">
+            <svg viewbox="0 0 24 24" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="social-media-icon">
+            <svg viewbox="0 0 24 24" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="social-media-icon">
+            <svg viewbox="0 0 24 24" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="social-media-icon">
+            <svg viewbox="0 0 24 24" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Scripts -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

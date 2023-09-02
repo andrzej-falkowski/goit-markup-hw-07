@@ -50,6 +50,26 @@
             </li>
           </ul>
         </address>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            viewbox="0 0 32 22"
+            width="32"
+            height="22"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1.34766 20.0431H30.8861M1.34766 10.7354H30.8861M1.34766 1.42773H30.8861"
+              stroke="#2E2F42"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -61,12 +81,14 @@
           </button>
         </div>
       </section>
-      <section class="section-padding-top-bottom">
+
+      <!-- Features section -->
+      <section class="section">
         <div class="container">
           <h2 class="visually-hidden">Features List</h2>
           <ul class="features-list">
             <li class="feature-list-item">
-              <div class="features_icon">
+              <div class="features-icon">
                 <svg viewbox="0 0 64 64" width="64" height="64">
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
@@ -78,7 +100,7 @@
               </p>
             </li>
             <li class="feature-list-item">
-              <div class="features_icon">
+              <div class="features-icon">
                 <svg viewbox="0 0 64 64" width="64" height="64">
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
@@ -90,7 +112,7 @@
               </p>
             </li>
             <li class="feature-list-item">
-              <div class="features_icon">
+              <div class="features-icon">
                 <svg viewbox="0 0 64 64" width="64" height="64">
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
@@ -102,7 +124,7 @@
               </p>
             </li>
             <li class="feature-list-item">
-              <div class="features_icon">
+              <div class="features-icon">
                 <svg viewbox="0 0 64 64" width="64" height="64">
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
@@ -116,14 +138,17 @@
           </ul>
         </div>
       </section>
-      <section class="section-padding-bottom">
+
+      <!-- What are we doing section -->
+      <section class="section-what-are-we-doing">
         <div class="container">
-          <h2 class="h2-what-are-we-doing">What Are We Doing</h2>
+          <h2 class="header-h2">What Are We Doing</h2>
           <ul class="list-what-are-we-doing">
             <li class="list-item-what-are-we-doing">
               <img
                 class="image-border"
                 src="./images/computer.jpg"
+                srcset="./images/computer@2x.jpg 2x"
                 alt="A computer screen displaying some graphs"
                 width="360"
                 height="300"
@@ -133,6 +158,7 @@
               <img
                 class="image-border"
                 src="./images/mobileapp.jpg"
+                srcset="./images/mobileapp@2x.jpg 2x"
                 alt="Mobile phone with some messaging app opened"
                 width="360"
                 height="300"
@@ -142,6 +168,7 @@
               <img
                 class="image-border"
                 src="./images/phone.jpg"
+                srcset="./images/phone@2x.jpg 2x"
                 alt="Mobile phone held by a man with laptop in the background"
                 width="360"
                 height="300"
@@ -150,13 +177,16 @@
           </ul>
         </div>
       </section>
-      <section class="ourteam-background section-padding-top-bottom">
+
+      <!-- Our team section -->
+      <section class="section ourteam-background">
         <div class="container">
-          <h2 class="h2-our-team">Our Team</h2>
+          <h2 class="header-h2">Our Team</h2>
           <ul class="list-our-team">
             <li class="card-our-team">
               <img
                 src="./images/member1.jpg"
+                srcset="./images/member1@2x.jpg 2x"
                 alt="Dark haired man with a beard in a shirt"
                 width="264"
                 height="260"
@@ -199,6 +229,7 @@
             <li class="card-our-team">
               <img
                 src="./images/member2.jpg"
+                srcset="./images/member2@2x.jpg 2x"
                 alt="Young smiling man looking to the side"
                 width="264"
                 height="260"
@@ -241,6 +272,7 @@
             <li class="card-our-team">
               <img
                 src="./images/member3.jpg"
+                srcset="./images/member3@2x.jpg 2x"
                 alt="Young woman with long dark hair wearing a pink sweater"
                 width="264"
                 height="260"
@@ -283,6 +315,7 @@
             <li class="card-our-team">
               <img
                 src="./images/member4.jpg"
+                srcset="./images/member4@2x.jpg 2x"
                 alt="Smiling man with dark hair and a beard"
                 width="264"
                 height="260"
@@ -325,9 +358,11 @@
           </ul>
         </div>
       </section>
-      <section class="section-padding-top-bottom">
+
+      <!-- Customers section -->
+      <section class="section">
         <div class="container">
-          <h2>Customers</h2>
+          <h2 class="header-h2">Customers</h2>
           <ul class="customers-list">
             <li class="customer-icon">
               <svg viewbox="0 0 104 56" width="104" height="56">
@@ -363,6 +398,8 @@
         </div>
       </section>
     </main>
+
+    <!-- Footer -->
     <footer class="page-footer">
       <div class="container flex-footer">
         <div class="footer-left-side">
@@ -376,28 +413,28 @@
           <p class="footer-body-medium">Social media</p>
           <ul class="footer-icon-list">
             <li>
-              <button type="button" class="footer-icon">
+              <button type="button" class="social-media-icon">
                 <svg viewbox="0 0 24 24" width="24" height="24">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </button>
             </li>
             <li>
-              <button type="button" class="footer-icon">
+              <button type="button" class="social-media-icon">
                 <svg viewbox="0 0 24 24" width="24" height="24">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </button>
             </li>
             <li>
-              <button type="button" class="footer-icon">
+              <button type="button" class="social-media-icon">
                 <svg viewbox="0 0 24 24" width="24" height="24">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </button>
             </li>
             <li>
-              <button type="button" class="footer-icon">
+              <button type="button" class="social-media-icon">
                 <svg viewbox="0 0 24 24" width="24" height="24">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
@@ -406,8 +443,8 @@
           </ul>
         </div>
         <div class="footer-right-side">
-          <form>
-            <label for="subscribe" class="footer-body-medium">Subscribe</label>
+          <form class="footer-body-medium">
+            <label for="subscribe">Subscribe</label>
             <div class="footer-input-wrapper">
               <input
                 name="subscribe"
@@ -429,6 +466,8 @@
         </div>
       </div>
     </footer>
+
+    <!-- Modal window -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-close-button" data-modal-close>
@@ -490,16 +529,85 @@
               /><svg width="16" height="16" class="checkbox-checked-icon">
                 <use href="./images/icons.svg#icon-checkbox"></use>
               </svg>
-              <div>
-                I accept the terms and conditions of the
-                <a class="terms-link" href="#">Privacy Policy</a>
-              </div>
+              I accept the terms and conditions of the
+              <a class="terms-link" href="#">Privacy Policy</a>
             </label>
           </div>
           <button class="form-submit-button" type="submit">Send</button>
         </form>
       </div>
     </div>
-    <script src="./js/modal.js"></script>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="menu-container js-menu-container">
+      <button class="menu-toggle js-close-menu">
+        <svg viewbox="0 0 8 8" width="8" height="8">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu-nav header-h2">
+        <li>
+          <a class="" href="./index.html" target="_self">Studio</a>
+        </li>
+        <li>
+          <a class="" href="./portfolio.html" target="_self">Portfolio</a>
+        </li>
+        <li><a class="" href="#">Contacts</a></li>
+      </ul>
+      <address>
+        <ul class="mobile-menu-contacts">
+          <li>
+            <a class="mobile-menu-tel header-h2" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+          <li>
+            <a class="mobile-menu-mail" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+      </address>
+      <ul class="mobile-menu-icon-list">
+        <li>
+          <button type="button" class="social-media-icon">
+            <svg viewbox="0 0 24 24" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="social-media-icon">
+            <svg viewbox="0 0 24 24" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="social-media-icon">
+            <svg viewbox="0 0 24 24" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="social-media-icon">
+            <svg viewbox="0 0 24 24" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Scripts -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
+    <script defer src="./js/modal.js"></script>
   </body>
 </html>
